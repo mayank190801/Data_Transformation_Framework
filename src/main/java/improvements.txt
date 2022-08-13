@@ -1,0 +1,17 @@
+-> try and catch is not the best way for handling errors - your software should be able to tell, what is missing as well
+-> that is what we call error handling in this framework is missing for sure!!
+
+Think about more and try to write them, make this project actually into something beneficial and problem solving
+(You would always have the credits role for it)
+
+-> One improvement could be using "String" + {} + "something" -> so that means you don't have to annoy yourself
+-> if nothing is there in the entity and only StringValue is there we will take it for it's face value
+-> Make a function or entity for that as well bruh!!
+
+
+THINGS TO DO - (Do this asap)
+-> Proper Read.me
+-> Unit Testing
+-> Commenting
+-> All mappings example
+-> Put some check on each function (No crashing happens)
