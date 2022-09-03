@@ -1,0 +1,68 @@
+{
+  "mappings" : [
+    {
+      "target" : "data.value.1",
+      "action" : "transformation",
+      "type" : "getConstant",
+      "sourceType" : "string",
+      "source" : "random",
+      "dataType" : "string"
+    },
+    {
+      "target" : "data.value.2",
+      "action" : "transformation",
+      "type" : "getInput",
+      "sourceType" : "string",
+      "source" : "random",
+      "dataType" : "string"
+    },
+    {
+      "target" : "data.value.3",
+      "action" : "transformation",
+      "type" : "concatenate",
+      "sources" : [
+        {
+          "target" : "data.value.2",
+          "action" : "transformation",
+          "type" : "getInput",
+          "sourceType" : "string",
+          "source" : "random",
+          "dataType" : "string"
+        },
+        {
+          "target" : "data.value.1",
+          "action" : "transformation",
+          "type" : "getConstant",
+          "sourceType" : "string",
+          "source" : "random",
+          "dataType" : "string"
+        }
+      ],
+      "dataType" : "string"
+    },
+    {
+      "target" : "data.value.4",
+      "action" : "transformation",
+      "type" : "firstOneOf",
+      "sources" : [
+        {
+          "target" : "data.value.2",
+          "action" : "transformation",
+          "type" : "getInput",
+          "sourceType" : "string",
+          "source" : "random",
+          "dataType" : "string"
+        },
+        {
+          "target" : "data.value.1",
+          "action" : "transformation",
+          "type" : "getConstant",
+          "sourceType" : "string",
+          "source" : "random",
+          "dataType" : "string"
+        }
+      ],
+      "dataType" : "string"
+    }
+  ]
+}
